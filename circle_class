@@ -1,0 +1,36 @@
+2)https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
+
+class Circle{
+    constructor(radius,color){
+        this.radius = radius;
+        this.color = color;
+    }
+    getRadius(){
+        console.log(this.radius);
+    }
+    setRadius(radius){
+        this.radius=radius;
+    }
+    getColor(){
+        console.log(this.color);
+    }
+    setColor(color){
+        this.color = color;
+    }
+    toString(){
+        console.log("Circle=[radius = "+this.radius+", color = "+this.color+"]");
+    }
+    getArea(){
+        console.log(Math.PI*Math.pow(this.radius,2));
+    }
+    getCircumference(){
+        console.log(2*Math.PI*this.radius);
+    }
+}
+
+var cir = new Circle();
+cir.setRadius(10);
+cir.setColor('red');
+cir.getArea();
+cir.getCircumference();
+cir.toString();
