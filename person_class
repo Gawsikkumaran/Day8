@@ -1,0 +1,43 @@
+3)Write a “person” class to hold all the details.
+
+class Person{
+    constructor(){}
+    getbio(){
+        console.log("Name : "+this.name);
+        console.log("Age : "+this.age);
+        console.log("Gender : "+this.gender);
+    }
+    setbio(name,age,gender){
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+    }
+    getqualifications(){
+        console.log("Degree : "+this.degree);
+        console.log("Department : "+this.dept);
+        console.log("Year of passing : "+this.yop);
+    }
+    setqualifications(degree,dept,yop){
+        this.degree = degree;
+        this.dept = dept;
+        this.yop = yop;
+    }
+    getemployment(){
+        console.log("Company : "+this.company);
+        console.log("Role : "+this.role);
+        console.log("Experience(years) : "+this.experience);
+    }
+    setemployment(company,role,experience){
+        this.company = company;
+        this.role = role;
+        this.experience = experience;
+    }
+}
+
+var details = new Person();
+details.setbio('Kumaran',25,'Male');
+details.setqualifications('BE','CSE','2018');
+details.setemployment('GUVI','Web Developer',4);
+details.getbio();
+details.getqualifications();
+details.getemployment();
