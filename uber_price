@@ -1,0 +1,17 @@
+4) write a class to calculate uber price.
+
+class Uberprice{
+    getprice(){
+        console.log(this.perkm*this.km*this.farerate);
+    }
+
+    setKM(km){
+        this.km = km;
+        this.perkm = 8;
+        this.farerate = 24;
+    }
+}
+
+var rate = new Uberprice();
+rate.setKM(20);
+rate.getprice();
